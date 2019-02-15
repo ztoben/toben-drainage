@@ -1,0 +1,12 @@
+# dependencies
+node_modules
+
+# production
+dist
+assets.json
+
+# misc
+.DS_Store
+.env
+npm-debug.log
+.idea/
