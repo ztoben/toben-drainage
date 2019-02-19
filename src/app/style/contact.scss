@@ -3,36 +3,62 @@
 #contact {
   background-color: lightgray;
 
-  .email-form {
+  .content {
     display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    max-width: 500px;
-    width: 50%;
-    margin-left: auto;
-    margin-right: auto;
-    padding: 20px;
+    flex-direction: row;
 
-    textarea {
-      height: 200px;
-      padding: 10px;
-    }
-
-    input[type='text'] {
-      padding: 10px;
-    }
-
-    button[type='submit'] {
-      background-color: $yellow;
-      border: none;
-      box-shadow: $shadow;
-      font-size: 18px;
-      cursor: pointer;
-    }
-
-    & > * {
+    .phone-container {
       flex: 1;
-      margin-bottom: 10px;
+      align-items: center;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+
+      p {
+        font-size: 20px;
+        line-height: 34px;
+
+        a {
+          color: black;
+        }
+      }
+    }
+
+    .email-container {
+      flex: 1;
+
+      .email-form {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        max-width: 500px;
+        width: 100%;
+        margin-left: auto;
+        margin-right: auto;
+        padding: 20px;
+
+        textarea {
+          height: 200px;
+          padding: 10px;
+        }
+
+        input[type='text'] {
+          padding: 10px;
+        }
+
+        button[type='submit'] {
+          background-color: $yellow;
+          border: none;
+          box-shadow: $shadow;
+          font-size: 18px;
+          cursor: pointer;
+        }
+
+        & > * {
+          flex: 1;
+          margin-bottom: 10px;
+        }
+      }
     }
   }
 }
@@ -41,6 +67,18 @@
   #contact {
     .email-form {
       width: calc(100% - 40px);
+    }
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  #contact {
+    .content {
+      flex-direction: column;
+
+      .email-container {
+        padding: 0;
+      }
     }
   }
 }
