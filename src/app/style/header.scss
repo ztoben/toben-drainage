@@ -37,15 +37,6 @@
       color: black;
       font-size: 24px;
     }
-
-    .phone-number {
-      text-decoration: none;
-      color: black;
-      font-size: 24px;
-      background-color: $yellow;
-      padding: 10px;
-      box-shadow: $shadow;
-    }
   }
 }
 
@@ -89,17 +80,7 @@
     }
 
     .link-container {
-      margin: 0;
-      width: 100%;
-      display: flex;
-      justify-content: center;
-
-      .phone-number {
-        font-size: 18px;
-        width: 60%;
-        display: flex;
-        justify-content: center;
-      }
+      display: none;
     }
   }
 }

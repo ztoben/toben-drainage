@@ -1,0 +1,23 @@
+#footer {
+  height: 20px;
+  display: flex;
+  padding: 10px;
+  background-color: black;
+  color: white;
+
+  span {
+    margin-left: auto;
+
+    a {
+      color: white;
+    }
+  }
+}
+
+@media only screen and (max-width: 1000px) {
+  #footer {
+    span {
+      margin-right: auto;
+    }
+  }
+}

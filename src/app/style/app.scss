@@ -11,6 +11,15 @@ body,
   font-family: 'Maven Pro', sans-serif;
 }
 
+.phone-number {
+  text-decoration: none;
+  color: black;
+  font-size: 24px;
+  background-color: $yellow;
+  padding: 10px;
+  box-shadow: $shadow;
+}
+
 .container {
   flex: 1;
   display: flex;
@@ -27,33 +36,6 @@ body,
       min-height: 300px;
       padding: 20px;
       width: calc(100% - 40px);
-    }
-
-    #services {
-      background-color: white;
-
-      h4 {
-        margin: 0;
-        font-weight: bold;
-        padding: 5px;
-        background-color: lightgray;
-      }
-    }
-
-    #footer {
-      height: 20px;
-      display: flex;
-      padding: 10px;
-      background-color: black;
-      color: white;
-
-      span {
-        margin-left: auto;
-
-        a {
-          color: white;
-        }
-      }
     }
   }
 }

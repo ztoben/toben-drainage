@@ -1,4 +1,5 @@
 import React, {Component} from 'react';
+import '../style/services.scss';
 
 class Services extends Component {
   render() {

@@ -23,10 +23,24 @@
     }
   }
 
+  .navigation-footer {
+    position: fixed;
+    height: 60px;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: darkgray;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
   ul {
     list-style-type: none;
     padding: 0;
     margin: 0;
+    overflow-x: hidden;
+    overflow-y: scroll;
 
     a {
       text-decoration: none;
@@ -34,7 +48,7 @@
     }
 
     li {
-      width: 100%;
+      width: calc(100% - 60px);
       padding: 30px;
       border-bottom: 1px solid darkgray;
     }

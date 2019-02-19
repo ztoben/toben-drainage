@@ -27,6 +27,11 @@ class Navigation extends Component {
             <li>Gallery</li>
           </Link>
         </ul>
+        <div className="navigation-footer">
+          <a href="tel:3192692412" className="phone-number">
+            Call (319) 269-2412
+          </a>
+        </div>
       </div>
     );
   }
