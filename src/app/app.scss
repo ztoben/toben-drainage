@@ -77,11 +77,8 @@ body,
       }
 
       .about-images {
-        flex: 1;
-
-        img {
-          width: 100%;
-        }
+        width: 40%;
+        max-width: 700px;
       }
 
       .thumbs-wrapper {

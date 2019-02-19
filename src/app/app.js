@@ -28,8 +28,9 @@ export default class App extends Component {
             <div className="about-text">
               <h1>About Toben Drainage</h1>
               <p>
-                We are Jill and Kevin Toben of Toben Drainage, LLC. We started our farm drainage
-                business in 2004 with a Johnson plow and a Steiger tractor.
+                We are Jill and Kevin Toben of Toben Drainage, LLC. Located in Parkersburg, Iowa, we
+                started our farm drainage business in 2004 with a Johnson plow and a Steiger
+                tractor.
               </p>
               <p>
                 In 2010 we purchased our first commercial Wolfe plow, and we most recently upgraded
