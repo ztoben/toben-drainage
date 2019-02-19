@@ -1,22 +1,102 @@
 [
-  "20140414_194339-min.jpg",
-  "20140417_193851-min.jpg",
-  "20140417_194343-min.jpg",
-  "20140417_194405-min.jpg",
-  "20150405_132632-min.jpg",
-  "20150512_131851-min.jpg",
-  "20150723_151029-min.jpg",
-  "20170523_162245-min.jpg",
-  "IMG_1741-min.jpg",
-  "IMG_1742-min.jpg",
-  "IMG_1743-min.jpg",
-  "IMG_1744-min.jpg",
-  "IMG_1745-min.jpg",
-  "IMG_1746-min.jpg",
-  "IMG_1747-min.jpg",
-  "IMG_1748-min.jpg",
-  "IMG_1749-min.jpg",
-  "IMG_1750-min.jpg",
-  "IMG_1751-min.jpg",
-  "IMG_1752-min.jpg"
+  {
+    "src": "20140414_194339-min.jpg",
+    "width": 4128,
+    "height": 2322
+  },
+  {
+    "src": "20140417_193851-min.jpg",
+    "width": 4096,
+    "height": 2304
+  },
+  {
+    "src": "20140417_194343-min.jpg",
+    "width": 4128,
+    "height": 2322
+  },
+  {
+    "src": "20140417_194405-min.jpg",
+    "width": 4096,
+    "height": 2304
+  },
+  {
+    "src": "20150405_132632-min.jpg",
+    "width": 4128,
+    "height": 2322
+  },
+  {
+    "src": "20150512_131851-min.jpg",
+    "width": 4128,
+    "height": 2322
+  },
+  {
+    "src": "20150723_151029-min.jpg",
+    "width": 2320,
+    "height": 4128
+  },
+  {
+    "src": "20170523_162245-min.jpg",
+    "width": 2320,
+    "height": 4128
+  },
+  {
+    "src": "IMG_1741-min.jpg",
+    "width": 2971,
+    "height": 3255
+  },
+  {
+    "src": "IMG_1742-min.jpg",
+    "width": 4000,
+    "height": 3000
+  },
+  {
+    "src": "IMG_1743-min.jpg",
+    "width": 3000,
+    "height": 4000
+  },
+  {
+    "src": "IMG_1744-min.jpg",
+    "width": 3000,
+    "height": 4000
+  },
+  {
+    "src": "IMG_1745-min.jpg",
+    "width": 2481,
+    "height": 2726
+  },
+  {
+    "src": "IMG_1746-min.jpg",
+    "width": 3007,
+    "height": 2331
+  },
+  {
+    "src": "IMG_1747-min.jpg",
+    "width": 4000,
+    "height": 3000
+  },
+  {
+    "src": "IMG_1748-min.jpg",
+    "width": 3831,
+    "height": 2125
+  },
+  {
+    "src": "IMG_1749-min.jpg",
+    "width": 3000,
+    "height": 4000
+  },
+  {
+    "src": "IMG_1750-min.jpg",
+    "width": 4000,
+    "height": 3000
+  },
+  {
+    "src": "IMG_1751-min.jpg",
+    "width": 4000,
+    "height": 3000
+  },
+  {
+    "src": "IMG_1752-min.jpg",
+    "width": 4000,
+    "height": 3000
+  }
 ]

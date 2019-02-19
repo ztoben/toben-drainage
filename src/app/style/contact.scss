@@ -1,0 +1,47 @@
+@import 'variables';
+
+#contact {
+  background-color: lightgray;
+
+  .email-form {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    max-width: 500px;
+    min-width: 250px;
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 20px;
+
+    textarea {
+      height: 200px;
+      padding: 10px;
+    }
+
+    input[type='text'] {
+      padding: 10px;
+    }
+
+    button[type='submit'] {
+      background-color: $yellow;
+      border: none;
+      box-shadow: $shadow;
+      font-size: 18px;
+      cursor: pointer;
+    }
+
+    & > * {
+      flex: 1;
+      margin-bottom: 10px;
+    }
+  }
+}
+
+@media only screen and (max-width: 1000px) {
+  #contact {
+    .email-form {
+      width: 90%;
+    }
+  }
+}

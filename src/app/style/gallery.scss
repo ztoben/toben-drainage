@@ -3,6 +3,7 @@
   flex-direction: column;
   flex: 1;
   height: 100vh;
+  background-color: lightgray;
 
   .navigation {
     height: 100px;
@@ -30,15 +31,8 @@
   }
 
   .content {
-    background-color: black;
     overflow-y: scroll;
     height: calc(100% - 100px);
-
-    img {
-      max-width: 750px;
-      width: 100%;
-      margin: 20px;
-      border: 5px solid white;
-    }
+    padding: 20px;
   }
 }
