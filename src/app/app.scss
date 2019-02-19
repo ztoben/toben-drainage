@@ -21,7 +21,7 @@ body,
     width: 100%;
     background-color: lightgray;
     background-image: linear-gradient(to left, rgba(211, 211, 211, 1), rgba(0, 0, 0, 0)),
-      url('../../assets/images/banner.jpg');
+      url('../../assets/images/banner-min.jpg');
     background-position: bottom left;
     background-repeat: no-repeat;
     background-size: 750px 150px;
@@ -29,7 +29,8 @@ body,
     align-items: center;
     justify-content: center;
     display: inline-flex;
-    box-shadow: rgba(0, 0, 0, 0.1) 0 1px 10px, rgba(0, 0, 0, 0.18) 0 1px 10px;
+    box-shadow: rgba(0, 0, 0, 0.1) 0 1px 20px, rgba(0, 0, 0, 0.25) 0 1px 20px;
+    z-index: 100;
 
     .logo {
       margin-left: 50px;
@@ -55,7 +56,7 @@ body,
         font-size: 24px;
         background-color: $yellow;
         padding: 10px;
-        box-shadow: 2px 5px 16px 0 rgba(0, 0, 0, 0.7), 5px 5px 15px 5px rgba(0, 0, 0, 0);
+        box-shadow: $shadow;
       }
     }
   }
@@ -64,5 +65,78 @@ body,
     width: 100%;
     flex: 1;
     overflow: scroll;
+
+    #about {
+      background-color: $yellow;
+      flex-direction: row;
+
+      .about-text {
+        flex: 1;
+        flex-direction: column;
+        padding: 10px;
+      }
+
+      .about-images {
+        flex: 1;
+
+        img {
+          width: 100%;
+        }
+      }
+
+      .thumbs-wrapper {
+        display: none;
+      }
+    }
+
+    #services {
+      background-color: white;
+    }
+
+    #contact {
+      background-color: lightgray;
+
+      .email-form {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        max-width: 500px;
+        min-width: 300px;
+        width: 50%;
+        margin-left: auto;
+        margin-right: auto;
+        padding: 20px;
+
+        textarea {
+          height: 200px;
+          padding: 10px;
+        }
+
+        input[type='text'] {
+          padding: 10px;
+        }
+
+        input[type='submit'] {
+          background-color: $yellow;
+          border: none;
+          box-shadow: $shadow;
+          font-size: 18px;
+          cursor: pointer;
+        }
+
+        & > * {
+          flex: 1;
+          margin-bottom: 10px;
+        }
+      }
+    }
+
+    & > * {
+      display: flex;
+      flex-direction: column;
+      min-height: 300px;
+      padding: 20px;
+      width: calc(100% - 40px);
+    }
   }
 }
