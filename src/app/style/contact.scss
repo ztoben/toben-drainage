@@ -40,10 +40,12 @@
         textarea {
           height: 200px;
           padding: 10px;
+          width: calc(100% - 20px);
         }
 
         input[type='text'] {
           padding: 10px;
+          width: calc(100% - 20px);
         }
 
         button[type='submit'] {
@@ -68,11 +70,7 @@
     .email-form {
       width: calc(100% - 40px);
     }
-  }
-}
 
-@media only screen and (max-width: 600px) {
-  #contact {
     .content {
       flex-direction: column;
 
