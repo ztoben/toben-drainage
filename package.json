@@ -7,8 +7,9 @@
   "main": "src/index.js",
   "homepage": "./",
   "scripts": {
-    "start": "webpack-dev-server --config ./webpack.config.js --mode development",
-    "build": "webpack --config ./webpack.config.js --mode production",
+    "build": "npm run build-gallery && webpack --config ./webpack.config.js --mode production",
+    "build-gallery": "node src/app/build_gallery.js",
+    "start": "npm run build-gallery && webpack-dev-server --config ./webpack.config.js --mode development",
     "lint": "pretty-quick"
   },
   "bugs": {
@@ -22,7 +23,9 @@
   "dependencies": {
     "prop-types": "15.7.2",
     "react": "16.8.2",
-    "react-responsive-carousel": "3.1.47"
+    "react-masonry-component": "6.2.1",
+    "react-responsive-carousel": "3.1.47",
+    "react-router-dom": "4.3.1"
   },
   "devDependencies": {
     "@babel/core": "7.2.2",
