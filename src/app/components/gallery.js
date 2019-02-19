@@ -9,8 +9,8 @@ class Gallery extends Component {
     return (
       <div className="gallery">
         <div className="navigation">
-          <Link to="/">←Back</Link>
-          <Link to="/">
+          <Link to="/home">←Back</Link>
+          <Link to="/home">
             <span className="close">&times;</span>
           </Link>
         </div>
@@ -22,7 +22,7 @@ class Gallery extends Component {
           >
             {gallery.map(file => {
               return (
-                <li>
+                <li key={file}>
                   <img alt="file" src={require(`../../../assets/images/gallery/${file}`)} />
                 </li>
               );

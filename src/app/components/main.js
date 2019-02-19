@@ -1,5 +1,5 @@
 import React, {Component} from 'react';
-import {Link} from 'react-router-dom';
+import {HashLink as Link} from 'react-router-hash-link';
 import {Carousel} from 'react-responsive-carousel';
 import 'react-responsive-carousel/lib/styles/carousel.min.css';
 import '../style/app.scss';
@@ -16,10 +16,16 @@ export default class Main extends Component {
             width="150"
           />
           <div className="link-container">
-            <a href="#about">About</a>
-            <a href="#services">Services</a>
-            <a href="#contact">Contact</a>
-            <Link to="/gallery/">Gallery</Link>
+            <Link smooth to="/home#about">
+              About
+            </Link>
+            <Link smooth to="/home#services">
+              Services
+            </Link>
+            <Link smooth to="/home#contact">
+              Contact
+            </Link>
+            <Link to="/gallery">Gallery</Link>
             <a href="tel:3192692412" className="phone-number">
               Call (319) 269-2412
             </a>
