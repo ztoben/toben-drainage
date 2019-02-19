@@ -42,29 +42,45 @@ export default class App extends Component {
             <div className="about-images">
               <Carousel centerMode infiniteLoop autoPlay>
                 <div>
-                  <img src={require('../../assets/images/new_and_old.jpg')} height={300} />
+                  <img src={require('../../assets/images/new_and_old-min.jpg')} height={300} />
                 </div>
                 <div>
-                  <img src={require('../../assets/images/stringing.jpg')} height={300} />
+                  <img src={require('../../assets/images/stringing-min.jpg')} height={300} />
                 </div>
                 <div>
-                  <img src={require('../../assets/images/plow_side.jpg')} height={300} />
+                  <img src={require('../../assets/images/plow_side-min.jpg')} height={300} />
                 </div>
                 <div>
-                  <img src={require('../../assets/images/backhoe.jpg')} height={300} />
+                  <img src={require('../../assets/images/backhoe-min.jpg')} height={300} />
                 </div>
                 <div>
-                  <img src={require('../../assets/images/sunset.jpg')} height={300} />
+                  <img src={require('../../assets/images/sunset-min.jpg')} height={300} />
                 </div>
               </Carousel>
             </div>
           </div>
           <div id="services">
             <h1>Services We Provide</h1>
+            <h4>Farm Drainage</h4>
             <ul>
-              <li>Field drainage</li>
-              <li>Septic installation</li>
-              <li>Time of transfer</li>
+              <li>Install drainage tile, plow in up to 15" dual wall</li>
+              <li>Tile repairs</li>
+              <li>Jetter service for clearing tile lines</li>
+            </ul>
+
+            <h4>Residential/Commercial Drainage</h4>
+            <ul>
+              <li>Install and repair of foundation drainage</li>
+              <li>Downspout tile</li>
+            </ul>
+
+            <h4>Septic Systems</h4>
+            <ul>
+              <li>Install new septics, including conventional and alternative systems</li>
+              <li>Repair existing septic systems</li>
+              <li>Perform Time of Transfer inspections</li>
+              <li>Jetter service for clearing clogged lines</li>
+              <li>Sewer camera for diagnostics and locating lines</li>
             </ul>
           </div>
           <div id="contact">
