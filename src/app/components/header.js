@@ -1,19 +1,26 @@
 import React, {Component} from 'react';
 import {HashLink as Link} from 'react-router-hash-link';
+import {withRouter} from 'react-router-dom';
 import '../style/header.scss';
 
 class Header extends Component {
   render() {
+    const {history} = this.props;
+
     return (
       <div className="header">
         <span className="navigation-icon">
           <Link to="/navigation/">☰</Link>
         </span>
         <img
+          style={{cursor: 'pointer'}}
           className="logo"
           alt="logo"
           src={require('../../../assets/images/logo.png')}
           width="150"
+          onClick={() => {
+            history.push('/home');
+          }}
         />
         <div className="link-container">
           <Link smooth to="/home#about">
@@ -35,4 +42,4 @@ class Header extends Component {
   }
 }
 
-export default Header;
+export default withRouter(Header);
