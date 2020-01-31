@@ -85,6 +85,7 @@ module.exports = {
   devServer: {
     compress: true,
     contentBase: './dist',
+    disableHostCheck: true,
     hot: true,
     open: true,
     port: 9999,
