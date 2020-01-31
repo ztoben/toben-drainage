@@ -20,6 +20,12 @@ body,
   box-shadow: $shadow;
 }
 
+.content-container {
+  width: 100%;
+  max-width: 1000px;
+  align-self: center;
+}
+
 .container {
   flex: 1;
   display: flex;

@@ -2,7 +2,6 @@
 
 #about {
   background-color: $yellow;
-  flex-direction: row;
 
   .about-text {
     flex: 1;
@@ -15,8 +14,10 @@
   }
 
   .about-images {
-    width: 40%;
+    width: 100%;
     max-width: 700px;
+    margin-left: auto;
+    margin-right: auto;
   }
 
   .thumbs-wrapper {
