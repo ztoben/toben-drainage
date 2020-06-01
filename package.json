@@ -45,7 +45,7 @@
     "husky": "4.2.5",
     "imagemin-gifsicle": "7.0.0",
     "imagemin-mozjpeg": "9.0.0",
-    "imagemin-pngquant": "8.0.0",
+    "imagemin-pngquant": "9.0.0",
     "imagemin-svgo": "8.0.0",
     "imagemin-webpack": "5.1.1",
     "node-sass": "4.14.1",
