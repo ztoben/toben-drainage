@@ -27,7 +27,7 @@
     "react-photo-gallery": "8.0.0",
     "react-responsive-carousel": "3.2.9",
     "react-router-dom": "5.2.0",
-    "react-router-hash-link": "1.2.2"
+    "react-router-hash-link": "2.0.0"
   },
   "devDependencies": {
     "@babel/core": "7.10.5",
