@@ -1,13 +1,7 @@
 const webpack = require('webpack');
 const HtmlWebPackPlugin = require('html-webpack-plugin');
 const FaviconsWebpackPlugin = require('favicons-webpack-plugin');
-
-// Image min config
 const ImageminPlugin = require('imagemin-webpack');
-const imageminGifsicle = require('imagemin-gifsicle');
-const imageminMozJpeg = require('imagemin-mozjpeg');
-const imageminPngquant = require('imagemin-pngquant');
-const imageminSvgo = require('imagemin-svgo');
 
 module.exports = {
   entry: ['react-hot-loader/patch', './src/index.js'],
@@ -60,24 +54,14 @@ module.exports = {
     }),
     new FaviconsWebpackPlugin('./assets/favicon.png'),
     new ImageminPlugin({
-      bail: false,
+      bail: false, // Ignore errors on corrupted images
       cache: true,
       imageminOptions: {
         plugins: [
-          imageminGifsicle({
-            interlaced: true,
-          }),
-          imageminMozJpeg({
-            progressive: true,
-            quality: 50,
-          }),
-          imageminPngquant({
-            quality: [0.5, 0.6],
-            speed: 10,
-          }),
-          imageminSvgo({
-            removeViewBox: true,
-          }),
+          ['gifsicle', {interlaced: true}],
+          ['mozjpeg', {progressive: true, quality: 50}],
+          ['pngquant', {quality: [0.5, 0.6], speed: 10}],
+          ['svgo', {plugins: [{removeViewBox: false}]}],
         ],
       },
     }),
