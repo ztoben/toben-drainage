@@ -16,7 +16,7 @@ class Header extends Component {
           style={{cursor: 'pointer'}}
           className="logo"
           alt="logo"
-          src={require('../../../assets/images/logo.png')}
+          src={require('../../../assets/images/logo.png').default}
           width="150"
           onClick={() => {
             history.push('/home');
