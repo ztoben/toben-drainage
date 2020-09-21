@@ -23,19 +23,28 @@ class About extends Component {
           <div className="about-images">
             <Carousel centerMode infiniteLoop autoPlay>
               <div>
-                <img src={require('../../../assets/images/new_and_old-min.jpg')} height={300} />
+                <img
+                  src={require('../../../assets/images/new_and_old-min.jpg').default}
+                  height={300}
+                />
               </div>
               <div>
-                <img src={require('../../../assets/images/stringing-min.jpg')} height={300} />
+                <img
+                  src={require('../../../assets/images/stringing-min.jpg').default}
+                  height={300}
+                />
               </div>
               <div>
-                <img src={require('../../../assets/images/plow_side-min.jpg')} height={300} />
+                <img
+                  src={require('../../../assets/images/plow_side-min.jpg').default}
+                  height={300}
+                />
               </div>
               <div>
-                <img src={require('../../../assets/images/backhoe-min.jpg')} height={300} />
+                <img src={require('../../../assets/images/backhoe-min.jpg').default} height={300} />
               </div>
               <div>
-                <img src={require('../../../assets/images/sunset-min.jpg')} height={300} />
+                <img src={require('../../../assets/images/sunset-min.jpg').default} height={300} />
               </div>
             </Carousel>
           </div>

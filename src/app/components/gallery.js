@@ -8,7 +8,7 @@ class Gallery extends Component {
   render() {
     const photos = gallery.map(({src, width, height}) => {
       return {
-        src: require(`../../../assets/images/gallery/${src}`),
+        src: require(`../../../assets/images/gallery/${src}`).default,
         width,
         height,
       };
